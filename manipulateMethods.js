@@ -16,3 +16,13 @@ var p = document.getElementByTagName("p");
 p.textContent 
 // replace text in p with small poem
 p.textContent = "Ships swim and fly through the waves, chasing porpoise into the west.";
+
+//innerHTML extracts not just text, but all html within tags
+
+var tag = document.querySelector("p");
+tag.innerHTML//"This is a <strong>strong</strong> paragraph."
+
+
+//chain
+document.querySelector("h1").textContent = "Silly Rivers in Fall, Falls, Falling white water";
+
