@@ -1,3 +1,5 @@
+//selecting elements
+
 // var tag = document.getElementById("highlight");
 // document.getElementsByClassName("bolded");
 // document.getElementsByTagName()
