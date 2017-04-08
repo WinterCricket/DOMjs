@@ -26,3 +26,6 @@ tag.innerHTML//"This is a <strong>strong</strong> paragraph."
 //chain
 document.querySelector("h1").textContent = "Silly Rivers in Fall, Falls, Falling white water";
 
+//Salmon, this silly river under fall, falls, falling white water and foam and the deep chug from jug of rock.
+//More salmon, into their future now, their ships swim and fly through the waves,
+//chasing porpoise into the west
