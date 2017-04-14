@@ -59,3 +59,41 @@ for(var i = 0; i < links.length; i++){
 	links[i].style.color = "purple";
 	links[i].style.border = "2px solid blue";
 }
+
+for(var i=0; i< links.length; i++){
+	console.log(links[i].getAttribute("href"));
+}
+
+for(var i=0; i<links.length; i++){
+	links[i].setAttribute("href", "https://en.wikipedia.org/wiki/Warren_Wilson_College_MFA_Program_for_Writers");
+}
+
+//DOM events
+var h1 = document.querySelector("h1");
+h1.addEventListener("click", function(){
+	alert("What the hell are you doing, you fool?");
+});
+
+//or
+h1.addEventListener("click", function(){
+	h1.style.background = "orange";
+});
+
+//unorder list
+document.querySelector("ul").addEventListener("click", function(){
+	console.log("You have clicked an unordered list!");
+} );
+//list items changed each
+var lis = document.querySelectorAll("li");
+for(var i=0; i<lis.length; i++){
+	lis[i].addEventListener("click", function(){
+	this.style.color = "orange";
+});
+}
+
+var button = document.querySelector("button");
+var paragraph = document.querySelector("p");
+//set up click listener
+button.addEventListener("click", function(){
+	paragraph.textContent = "So, what's the damned problem?";
+});
