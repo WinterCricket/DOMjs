@@ -1,26 +1,30 @@
-var button = document.querySelector("button");
-var division = document.querySelector("div");
+ var button = document.querySelector("button");
+ var division = document.querySelector("div");
+ var isGreen = false;
+ 
 
-division.style.background = "green";
+ 
+ button.addEventListener("click", function(){
+ 	if(isGreen){
+ 		division.style.background = "salmon";
+ 		// isGreen = false;
+ 	} else {
+ 		division.style.background = "green";
+ 		// isGreen = true;
+ 	}
+ 	isGreen = !isGreen; //refactor other booleans with this
+ });
+
+
+ 	
 
 
 
+// function toggle(button)
+// {
+//   if(document.getElementById("1").value=="OFF"){
+//    document.getElementById("1").value="ON";}
 
-// button.addEventListener("click", function(){
-// 	color = division.style.background;
-// 	color = "salmon";
-// });
-
-
-if(division.style.background){
-	button.addEventListener("click", function(){
-	
-	division.style.background = "salmon";
-});
-} 
-if(division.style.background){
-	button.addEventListener("click", function(){
-	
-	division.style.background = "green";
-});
-}
+//   else if(document.getElementById("1").value=="ON"){
+//    document.getElementById("1").value="OFF";}
+// }
