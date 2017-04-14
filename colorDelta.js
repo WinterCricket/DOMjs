@@ -1,18 +1,25 @@
  var button = document.querySelector("button");
  var division = document.querySelector("div");
- var isGreen = false;
+ // var isGreen = false;
  
 
  
+ // button.addEventListener("click", function(){
+ // 	if(isGreen){
+ // 		division.style.background = "salmon";
+ // 		// isGreen = false;
+ // 	} else {
+ // 		division.style.background = "green";
+ // 		// isGreen = true;
+ // 	}
+ // 	isGreen = !isGreen; //refactor other booleans with this
+ // });
+
  button.addEventListener("click", function(){
- 	if(isGreen){
- 		division.style.background = "salmon";
- 		// isGreen = false;
- 	} else {
- 		division.style.background = "green";
- 		// isGreen = true;
- 	}
- 	isGreen = !isGreen; //refactor other booleans with this
+ 		
+ 		division.classList.toggle("green");
+ 		
+ 		
  });
 
 
